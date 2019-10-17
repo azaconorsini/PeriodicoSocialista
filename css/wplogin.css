@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800,800i|Raleway:300,300i,400,400i,700,700i,800,800i');
+body.login {
+  background-image: url("../images/brand/bg-square.png"), linear-gradient(#f8f8f8, #eee);
+  background-color: #eee;
+  color: #222;
+}
+body.login div#login h1 a {
+  width: 320px;
+  height: 80px;
+  display: block;
+  overflow: hidden;
+  margin: 0px auto 20px;
+  outline: none;
+  background: url('../images/brand/brand-login.png') no-repeat center top;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+body.login div#login h1 a:hover {
+  box-shadow: none;
+}
+body.login div#login div#login_error {
+  font: 400 14px/18px 'Raleway', sans-serif;
+  background-color: #eb1227;
+  color: #FFF;
+  border-left-color: #ae0000;
+}
+body.login div#login div#login_error strong {
+  font-weight: bold;
+}
+body.login div#login div#login_error a {
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+}
+body.login div#login div#login_error a:hover {
+  color: #EEE;
+}
+body.login div#login p.message {
+  font: 400 14px/18px 'Raleway', sans-serif;
+  background-color: #deb13a;
+  color: #222;
+  border-left-color: #CA9C22;
+}
+body.login div#login form#loginform,
+body.login div#login form#lostpasswordform {
+  border-radius: 0px;
+  display: block;
+  margin-bottom: 20px;
+  border-color: 1px solid #064d23;
+}
+body.login div#login form#loginform label,
+body.login div#login form#lostpasswordform label {
+  color: #777;
+  font: 800 12px/16px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+body.login div#login form#loginform label i.fa,
+body.login div#login form#lostpasswordform label i.fa {
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 3px
+}
+
+body.login div#login form#loginform input#user_login,
+body.login div#login form#loginform input#user_pass,
+body.login div#login form#lostpasswordform input#user_login,
+body.login div#login form#lostpasswordform input#user_pass {
+  height: 45px;
+  padding: 0px 10px;
+  border-color: #DDD;
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+  border-radius: 0px;
+}
+
+body.login div#login form#loginform input#user_login:hover,
+body.login div#login form#loginform input#user_pass:hover,
+body.login div#login form#loginform input#user_login:focus,
+body.login div#login form#loginform input#user_pass:focus,
+body.login div#login form#lostpasswordform input#user_login:hover,
+body.login div#login form#lostpasswordform input#user_pass:hover,
+body.login div#login form#lostpasswordform input#user_login:focus,
+body.login div#login form#lostpasswordform input#user_pass:focus {
+  border-color: #DDD;
+  box-shadow: none;
+}
+body.login div#login form#loginform button.button-primary,
+body.login div#login form#loginform button.button-large,
+body.login div#login form#lostpasswordform button.button-primary,
+body.login div#login form#lostpasswordform button.button-large {
+  color: #FFF;
+  font: 800 12px/16px 'Raleway', sans-serif;
+  text-transform: uppercase;
+  height: 40px;
+  padding: 0px 25px;
+  display: inline-block;
+  box-shadow: none;
+  border: none;
+  border-radius: 0px;
+  background-color: #eb1227;
+  transition: background-color 0.35s linear;
+  text-shadow: none;
+}
+body.login div#login form#loginform button.button-primary:hover,
+body.login div#login form#loginform button.button-large:hover,
+body.login div#login form#lostpasswordform button.button-primary:hover,
+body.login div#login form#lostpasswordform button.button-large:hover {
+  background-color: #BF0F21;
+}
+body.login div#login form#loginform button i.fa {
+  font-size: 16px;
+  font-weight: bold;
+}
+body.login div#login #nav,
+body.login div#login #backtoblog {
+  margin: 0px 0px 10px;
+  padding: 0px;
+  font-size: 16px;
+}
+body.login div#login #nav a,
+body.login div#login #backtoblog a {
+  color: #222;
+  font: bold 16px/22px 'Raleway', sans-serif;
+  display: block;
+  text-align: center;
+  outline: none;
+  -webkit-transition: color 0.35s linear;
+  -moz-transition: color 0.35s linear;
+  transition: color 0.35s linear;
+}
+body.login div#login #nav a:hover,
+body.login div#login #backtoblog a:hover,
+body.login div#login #nav a:focus,
+body.login div#login #backtoblog a:focus {
+  color: #eb1227;
+  box-shadow: none;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+  font-weight: 400;
+  font-size: 14px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+  font-weight: 400;
+  font-size: 14px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+  font-weight: 400;
+  font-size: 14px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+  font-weight: 400;
+  font-size: 14px;
+}

@@ -1,0 +1,100 @@
+body.login {
+  background: #0B9444 url('../images/bg-green-filter.jpg') repeat;
+}
+body.login div#login h1 a {
+  width: 320px;
+  height: 71px;
+  display: block;
+  overflow: hidden;
+  margin: 0px auto 25px;
+  outline: none;
+  background: url('../images/login-logo-ecobags.png') no-repeat center top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+body.login div#login div#login_error {
+  background-color: #E10000;
+  color: #FFF;
+  border-left-color: #ae0000;
+}
+body.login div#login div#login_error a {
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+}
+body.login div#login div#login_error a:hover {
+  color: #EEE;
+}
+body.login div#login p.message {
+  background-color: #00C1CF;
+  color: #FFF;
+  font-weight: bold;
+  border-left-color: #007a83;
+}
+body.login div#login form#loginform {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  display: block;
+  margin-bottom: 25px;
+  border-color: 1px solid #064d23;
+}
+body.login div#login form#loginform label {
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+}
+body.login div#login form#loginform input#user_login,
+body.login div#login form#loginform input#user_pass {
+  height: 45px;
+  padding: 0px 10px;
+  border-color: #DDD;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+}
+body.login div#login form#loginform input#user_login:hover,
+body.login div#login form#loginform input#user_pass:hover,
+body.login div#login form#loginform input#user_login:focus,
+body.login div#login form#loginform input#user_pass:focus {
+  border-color: #DDD;
+  box-shadow: none;
+}
+body.login div#login form#loginform input.button-primary,
+body.login div#login form#loginform input.button-large {
+  height: 45px;
+  padding: 0px 25px;
+  display: inline-block;
+  box-shadow: none;
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  text-shadow: 0px 1px 0px #000;
+  background-color: #0B9444;
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+}
+body.login div#login form#loginform input.button-primary:hover,
+body.login div#login form#loginform input.button-large:hover {
+  background-color: #097c39;
+}
+body.login div#login #nav,
+body.login div#login #backtoblog {
+  margin: 0px 0px 10px;
+  padding: 0px;
+  font-size: 16px;
+}
+body.login div#login #nav a,
+body.login div#login #backtoblog a {
+  color: #FFF;
+  text-shadow: 0px 1px 0px #000;
+  display: block;
+  text-align: center;
+}

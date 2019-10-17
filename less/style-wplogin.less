@@ -1,0 +1,103 @@
+body.login {
+  background: #0B9444 url('../images/bg-green-filter.jpg') repeat;
+	div#login {
+		h1 {
+      a {
+        width: 320px;
+        height: 71px;
+        display: block;
+        overflow: hidden;
+        margin: 0px auto 25px;
+        outline: none;
+        background: url('../images/login-logo-ecobags.png') no-repeat center top;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+      }
+    }
+    div#login_error {
+      background-color: #E10000;
+      color: #FFF;
+      border-left-color: darken(#E10000, 10%);
+
+      a {
+        color: #FFF;
+        font-weight: bold;
+        margin-top: 10px}        transition: all 0.35s ease;
+        -webkit-transition: all 0.35s ease;
+        -moz-transition: all 0.35s ease;
+
+        &:hover {
+          color: #EEE;
+        }
+      }
+    }
+    p.message {
+      background-color: #00C1CF;
+      color: #FFF;
+      font-weight: bold;
+      border-left-color: darken(#00C1CF, 15%);
+    }
+    form#loginform {
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      display: block;
+      margin-bottom: 25px;
+      border-color: 1px solid darken(#0B9444, 15%);
+
+      label {
+        font-size: 16px;
+        line-height: 20px;
+        display: block; 
+      }
+      input {
+        &#user_login, &#user_pass {
+          height: 45px;
+          padding: 0px 10px;
+          border-color: #DDD;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 1px;
+          -webkit-border-radius: 1px;
+          -moz-border-radius: 1px;
+
+          &:hover, &:focus {
+            border-color: #DDD;
+            box-shadow: none;
+          }
+        }
+        &.button-primary, &.button-large {
+          height: 45px;
+          padding: 0px 25px;
+          display: inline-block;
+          box-shadow: none;
+          border: none;
+          font-size: 16px;
+          color: #FFF;
+          text-shadow: 0px 1px 0px #000;
+          background-color: #0B9444;
+          transition: all 0.35s ease;
+          -webkit-transition: all 0.35s ease;
+          -moz-transition: all 0.35s ease;
+
+          &:hover {
+            background-color: darken(#0B9444, 5%);
+          } 
+        }
+      }
+    }
+    #nav, #backtoblog {
+      margin: 0px 0px 10px;
+      padding: 0px;
+      font-size: 16px;
+
+      a {
+        color: #FFF;
+        text-shadow: 0px 1px 0px #000;
+        display: block;
+        text-align: center;
+      }
+    }
+	}
+}

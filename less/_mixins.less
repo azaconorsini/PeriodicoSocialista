@@ -1,0 +1,95 @@
+// MIXINS
+// Por: Johan Jose Azacon Orsini
+// Sitio web: http://jgproducciones.com.ve
+// Contacto: j.azacon@gmail.com - (+58) 412-8605556
+// Tema: Periódico El Socialista Digital
+
+// Prefixed - Prefijos establecidos para propiedes
+////////////////////////////////////////////////////////////////////////////
+.prefixed(@property, @value) {
+	-webkit-@{property}: @value;
+	   -moz-@{property}: @value;
+	    -ms-@{property}: @value;
+	     -o-@{property}: @value;
+	        @{property}: @value;
+}
+
+// Background linear gradient - Fondo degradado
+////////////////////////////////////////////////////////////////////////////
+.background-linear-gradient(@startcolor, @endcolor) {
+	background-color: @startcolor;
+	background-image: -webkit-linear-gradient(linear, left top, left bottom, from(@startcolor), to(@endcolor));
+	background-image: -webkit-linear-gradient(top, @startcolor, @endcolor);
+	background-image: -moz-linear-gradient(top, @startcolor, @endcolor);
+	background-image: -ms-linear-gradient(top, @startcolor, @endcolor);
+	background-image: -o-linear-gradient(top, @startcolor, @endcolor);
+	background-image: linear-gradient(top, @startcolor, @endcolor);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='@{$startColor}', endColorStr='@{$endColor}')	
+}
+
+// Propiedades de opacidad
+////////////////////////////////////////////////////////////////////////////
+.opacity(@alpha) {
+	opacity: @alpha;
+	@opacity-ie: @alpha*100;
+	filter: "alpha(opacity=@{opacity-ie});";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="@opacity-ie")"
+}
+.background-opacity(@color, @alpha) {
+	background-color: @color;
+	background-color: fade(@color, @alpha%);	
+}
+
+// Propiedades con prefijos 
+////////////////////////////////////////////////////////////////////////////
+.border-radius(@radius) {
+	.prefixed(border-radius, @radius);
+}
+.border-radius-separate(@topLeftRadius: 3px, @topRightRadius: 3px, @bottomLeftRadius: 3px, @bottomRightRadius: 3px){
+	-webkit-border-top-left-radius: @topLeftRadius;
+	-webkit-border-top-right-radius: @topRightRadius;
+	-webkit-border-bottom-left-radius: @bottomLeftRadius;
+	-webkit-border-bottom-right-radius: @bottomRightRadius; 
+	-moz-border-top-left-radius: @topLeftRadius;
+	-moz-border-top-right-radius: @topRightRadius;
+	-moz-border-bottom-left-radius: @bottomLeftRadius;
+	-moz-border-bottom-right-radius: @bottomRightRadius;
+	border-top-left-radius: @topLeftRadius;
+	border-top-right-radius: @topRightRadius;
+	border-bottom-left-radius: @bottomLeftRadius;
+	border-bottom-right-radius: @bottomRightRadius;
+}
+.box-shadow(@x: 0, @y: 0, @blur: 4px, @color: rgba(0, 0, 0, 0.2)){
+	.prefixed(box-shadow, @x @y @blur @color);
+}
+.box-shadow-custom(@x: 0, @y: 0, @blur: 4px 1px, @color: rgba(0, 0, 0, 0.2)){
+	.prefixed(box-shadow, @x @y @blur @color);
+}
+.transition(@arguments: all 0.35s) {
+	.prefixed(transition, @arguments)
+}
+.text-shadow(@x: 2px, @y: 2px, @blur: 4px, @color: rgba(0, 0, 0, 0.8)){
+	text-shadow: @x @y @blur @color;
+}
+
+// Propiedades para botones
+////////////////////////////////////////////////////////////////////////////
+.button-variant(@color, @background-color, @border-color) {
+	color: @color;
+	background-color: @background-color;
+	border-color: darken(@border-color, 5%);
+	font-weight: 700;
+	outline: none;
+
+	&:hover, &:hover:focus, &:focus {
+		color: @color;
+		background-color: darken(@background-color, 5%);
+	}
+}
+// Importación de directorios
+////////////////////////////////////////////////////////////////////////////
+@patch-img: "../images";
+
+.font-family-fira(@font-size: @font-size-base) {
+	font: @font-weight-bold @font-size @font-family-fira;
+}
