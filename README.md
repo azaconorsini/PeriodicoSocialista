@@ -18,7 +18,18 @@
 - PHP
 - Librerías Javascript
 
-### Johan J. Azacon O.
-**Email:** j.azacon"gmail.com
+## Enlaces de propuestas para el tema
 
-![Mi imagen](https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1c498453600019.5939d0ef4472a.jpg)
+- Primera propuesta para página de publicaciones de artículos -> [INGRESA AQUI](https://azaconorsini.github.io/PeriodicoSocialista/single.html)
+- Segunda propuesta para página de publicaciones -> [INGRESA AQUI](https://azaconorsini.github.io/PeriodicoSocialista/single-2.html)
+- Propuesta para página de artículos con contenido mutimedia (Videos) -> [INGRESA AQUI](https://azaconorsini.github.io/PeriodicoSocialista/single-video.html)
+
+### Johan J. Azacon O.
+**Email:** j.azacon@gmail.com
+
+**Website:** https://azaconorsini.github.io/PeriodicoSocialista/
+
+![Cover 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1c498453600019.5939d0ef4472a.jpg)
+
+
+![Cover 2](https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/4d461753600019.5939d27256743.jpg)
